@@ -15,7 +15,7 @@ namespace MeterReadingAPI.Models
                     return; // DB has been seeded
                 }
 
-                var accounts = File.ReadAllLines("path_to_Test_accounts.csv")
+                var accounts = File.ReadAllLines("Data\\Test_Accounts 2.csv")
                     .Skip(1)
                     .Select(line => line.Split(','))
                     .Select(columns => new Account
